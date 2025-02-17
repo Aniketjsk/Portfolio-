@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Aniket Sharma</title>
+ <link rel="icon" href="favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Hover animation for icons */
+    .fa-3x {
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .fa-3x:hover {
+      transform: scale(1.2);
+      color: #007bff;
+    }
+
+    /* Centering icons */
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    /* Enlarged icon size in the navbar */
+    .navbar-nav .nav-item .nav-link {
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="bg-info text-white text-center py-5">
+    <h1>Aniket Sharma</h1>
+    <p>Web Developer | PHP | WordPress | React</p>
+    <nav class="navbar navbar-expand-lg navbar-dark justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#timeline" class="nav-link">Timeline</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="container py-5">
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="profile.jpg" alt="Profile Picture" class="rounded-circle img-fluid" style="max-width: 200px;">
+      </div>
+      <div class="col-md-8">
+        <h2>About Me</h2>
+        <p>Hello! I'm Aniket Sharma, a passionate web developer with experience in PHP, WordPress, and React. I love building dynamic and responsive web applications. Over the years, I've worked on more than 50 websites, focusing on content, images, and design. Additionally, I’ve worked on the layout and design for 10+ new websites, bringing fresh and innovative ideas to each project.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center">Skills</h2>
+      <div class="row">
+        <div class="col-md-3 text-center">
+          <i class="fas fa-code fa-3x"></i>
+          <h4>PHP</h4>
+        </div>
+        <div class="col-md-3 text-center">
+          <i class="fab fa-react fa-3x"></i>
+          <h4>React</h4>
+        </div>
+        <div class="col-md-3 text-center">
+          <i class="fab fa-wordpress fa-3x"></i>
+          <h4>WordPress</h4>
+        </div>
+        <div class="col-md-3 text-center">
+          <i class="fas fa-database fa-3x"></i>
+          <h4>MySQL</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section id="timeline" class="container py-5">
+    <h2 class="text-center">Timeline</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>Bachelor of Technology - AKTU University</h4>
+        <p>2021 - 2024</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="bg-info py-5 text-white">
+    <div class="container">
+      <h2 class="text-center">Experience</h2>
+      <div class="experience">
+        <div class="experience-item">
+          <h4>PHP Web Developer - BroStartup Pvt. Ltd (Current)</h4>
+          <p>Currently working on various web projects using PHP and WordPress.</p>
+        </div>
+        <div class="experience-item">
+          <h4>PHP Web Developer (7 months)</h4>
+          <p>Worked on various web projects using PHP and WordPress.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center">Projects</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="project-card">
+            <h4>Task Manager</h4>
+            <p>Task management system with user authentication.</p>
+            <button class="btn btn-primary" onclick="loadProjectDetails('taskManager')">View Details</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-card">
+            <h4>Blockchain Identity System</h4>
+            <p>Secure identity management using blockchain.</p>
+            <button class="btn btn-primary" onclick="loadProjectDetails('blockchain')">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section (Only Social Media Icons) -->
+  <section id="contact" class="container py-5 text-center">
+    <h2>Contact Me</h2>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/aniket-sharma-08a739199/" class="mx-2"><i class="fab fa-linkedin fa-3x"></i></a>
+      <a href="https://wa.link/cm7bsu" class="mx-2"><i class="fab fa-whatsapp fa-3x"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Aniket Sharma. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
