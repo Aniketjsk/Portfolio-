@@ -32,6 +32,56 @@
     .navbar-nav .nav-item .nav-link {
       font-size: 1.2rem;
     }
+    /* Certificate Section Styling */
+    .certificate-card {
+      overflow: hidden;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .certificate-img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .certificate-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .certificate-img:hover {
+      transform: scale(1.1);
+    }
+    .portfolio-card {
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .portfolio-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .portfolio-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .portfolio-img:hover {
+    transform: scale(1.1);
+  }
+  .text-center.mt-20 {
+  margin-top: 20px; /* Adjust this value as needed */
+}
   </style>
 </head>
 <body>
@@ -44,7 +94,6 @@
         <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
         <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
         <li class="nav-item"><a href="#timeline" class="nav-link">Timeline</a></li>
-        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
         <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
@@ -58,35 +107,153 @@
       </div>
       <div class="col-md-8">
         <h2>About Me</h2>
-        <p>Hello! I'm Aniket Sharma, a passionate web developer with experience in PHP, WordPress, and React. I love building dynamic and responsive web applications. Over the years, I've worked on more than 50 websites, focusing on content, images, and design. Additionally, I’ve worked on the layout and design for 10+ new websites, bringing fresh and innovative ideas to each project.</p>
+        <p>Hello! I'm Aniket Sharma, a passionate web developer with experience in PHP, WordPress, and React. I love building dynamic and responsive web applications. Over the years, I've worked on more than 50 websites, focusing on content, images, and design. Additionally, I’ve worked on the layout and design for 8+ new websites, bringing fresh and innovative ideas to each project.</p>
       </div>
     </div>
   </section>
+<!-- Portfolio Section -->
+<section id="portfolio" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center">Portfolio</h2>
+    <div class="row">
+      
+      <!-- Portfolio Item 1 -->
+      <div class="col-md-4">
+        <div class="portfolio-card">
+          <a href="https://travpholer.com/" target="_blank">
+            <img src="website1-screenshot.jpg" alt="Website 1" class="portfolio-img">
+          </a>
+          <p class="mt-2">
+We have done the work of posting on this website.</p>
+         <div class="text-center" style="margin-top: 40px;">
+  <a href="https://travpholer.com/" target="_blank" class="btn btn-primary">Visit Website</a>
+</div>
 
+        </div>
+      </div>
+
+      <!-- Portfolio Item 2 -->
+      <div class="col-md-4">
+        <div class="portfolio-card">
+          <a href="https://ushine24.ae/" target="_blank">
+            <img src="website2-screenshot.jpg" alt="Website 2" class="portfolio-img">
+          </a>
+           <p class="mt-2">In this website we have added images of content and services.</p>
+          <div class="text-center" style="margin-top: 40px;">
+            <a href="https://ushine24.ae/" target="_blank" class="btn btn-primary">Visit Website</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Item 3 -->
+      <div class="col-md-4">
+        <div class="portfolio-card">
+          <a href="https://bluestonegroup.in/" target="_blank">
+            <img src="website3-screenshot.jpg" alt="Website 3" class="portfolio-img">
+          </a>
+           <p class="mt-2">The layout of this website has been fixed properly.</p>
+          <div class="text-center" style="margin-top: 40px;">
+            <a href="https://bluestonegroup.in/" target="_blank" class="btn btn-primary">Visit Website</a>
+          </div>
+        </div>
+      </div>
+       <!-- Portfolio Item 4 -->
+      <div class="col-md-4">
+        <div class="portfolio-card">
+          <a href="https://drpramodsharmacharitabletrust.com/" target="_blank">
+            <img src="website4-screenshot.jpg" alt="Website 4" class="portfolio-img">
+          </a>
+           <p class="mt-2">We have created some pages on this website, such as Contact Us, Privacy Policy, and Refund..</p>
+          <div class="text-center" style="margin-top: 40px;">
+            <a href="https://drpramodsharmacharitabletrust.com/" target="_blank" class="btn btn-primary">Visit Website</a>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio Item 5 -->
+      <div class="col-md-4">
+        <div class="portfolio-card">
+          <a href="https://shivanshheartcare.com/" target="_blank">
+            <img src="website5-screenshot.jpg" alt="Website 5" class="portfolio-img">
+          </a>
+           <p class="mt-2">We have done most of the work on this website.</p>
+          <div class="text-center" style="margin-top: 40px;">
+            <a href="https://shivanshheartcare.com/" target="_blank" class="btn btn-primary">Visit Website</a>
+          </div>
+        </div>
+      </div>
+            <!-- Portfolio Item 6 -->
+      <div class="col-md-4">
+        <div class="portfolio-card">
+          <a href="https://reeldeepboat.com/" target="_blank">
+            <img src="website6-screenshot.jpg" alt="Website 6" class="portfolio-img">
+          </a>
+           <p class="mt-2">We have done most of the work on this website.</p>
+          <div class="text-center" style="margin-top: 40px;">
+            <a href="https://reeldeepboat.com/" target="_blank" class="btn btn-primary">Visit Website</a>
+          </div>
+        </div>
+      </div>
+            
+            <!-- Portfolio Item 7 -->
+      <div class="col-md-4">
+        <div class="portfolio-card">
+          <a href="https://ultraedgecement.com/" target="_blank">
+            <img src="website7-screenshot.jpg" alt="Website 7" class="portfolio-img">
+          </a>
+           <p class="mt-2">We have changed the content and images on this website; it was a theme.</p>
+          <div class="text-center" style="margin-top: 40px;">
+            <a href="https://ultraedgecement.com/" target="_blank" class="btn btn-primary">Visit Website</a>
+          </div>
+        </div>
+      </div>
+        <!-- Portfolio Item 8 -->
+      <div class="col-md-4">
+        <div class="portfolio-card">
+          <a href="https://chemstrom.com/" target="_blank">
+            <img src="website8-screenshot.jpg" alt="Website 8" class="portfolio-img">
+          </a>
+           <p class="mt-2">We have changed the content and images on this website; it was a theme.</p>
+          <div class="text-center" style="margin-top: 40px;">
+            <a href="https://chemstrom.com/" target="_blank" class="btn btn-primary">Visit Website</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
   <!-- Skills Section -->
   <section id="skills" class="bg-light py-5">
     <div class="container">
-      <h2 class="text-center">Skills</h2>
-      <div class="row">
-        <div class="col-md-3 text-center">
-          <i class="fas fa-code fa-3x"></i>
-          <h4>PHP</h4>
+        <h2 class="text-center">Skills</h2>
+        <div class="row">
+            <div class="col-md-2 text-center">
+                <i class="fab fa-html5 fa-3x text-danger"></i>
+                <h4>HTML</h4>
+            </div>
+            <div class="col-md-2 text-center">
+                <i class="fab fa-css3-alt fa-3x text-primary"></i>
+                <h4>CSS</h4>
+            </div>
+            <div class="col-md-2 text-center">
+                <i class="fab fa-js fa-3x text-warning"></i>
+                <h4>JavaScript</h4>
+            </div>
+            <div class="col-md-2 text-center">
+                <i class="fab fa-bootstrap fa-3x text-purple"></i>
+                <h4>Bootstrap</h4>
+            </div>
+            <div class="col-md-2 text-center">
+                <i class="fas fa-code fa-3x"></i>
+                <h4>PHP</h4>
+            </div>
+            <div class="col-md-2 text-center">
+                <i class="fab fa-wordpress fa-3x text-primary"></i>
+                <h4>WordPress</h4>
+            </div>
         </div>
-        <div class="col-md-3 text-center">
-          <i class="fab fa-react fa-3x"></i>
-          <h4>React</h4>
-        </div>
-        <div class="col-md-3 text-center">
-          <i class="fab fa-wordpress fa-3x"></i>
-          <h4>WordPress</h4>
-        </div>
-        <div class="col-md-3 text-center">
-          <i class="fas fa-database fa-3x"></i>
-          <h4>MySQL</h4>
-        </div>
-      </div>
     </div>
-  </section>
+</section>
 
   <!-- Timeline Section -->
   <section id="timeline" class="container py-5">
@@ -116,24 +283,21 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center">Projects</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="project-card">
-            <h4>Task Manager</h4>
-            <p>Task management system with user authentication.</p>
-            <button class="btn btn-primary" onclick="loadProjectDetails('taskManager')">View Details</button>
-          </div>
+  
+    <!-- Certificates Section -->
+  <section id="certificates" class="container py-5">
+    <h2 class="text-center">Certificates</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-5 text-center">
+        <div class="certificate-card">
+          <img src="Coding ClaveLLp.jpg" alt="Coding Clave LLP Certificate" class="certificate-img">
+          <h5 class="mt-2">Coding Clave LLP</h5>
         </div>
-        <div class="col-md-4">
-          <div class="project-card">
-            <h4>Blockchain Identity System</h4>
-            <p>Secure identity management using blockchain.</p>
-            <button class="btn btn-primary" onclick="loadProjectDetails('blockchain')">View Details</button>
-          </div>
+      </div>
+      <div class="col-md-5 text-center">
+        <div class="certificate-card">
+          <img src="spi.jpg" alt="SPI Certificate" class="certificate-img">
+          <h5 class="mt-2">SPI</h5>
         </div>
       </div>
     </div>
